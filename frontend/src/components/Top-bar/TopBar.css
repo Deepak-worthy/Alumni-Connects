@@ -1,0 +1,89 @@
+.Header{
+    display:flex;
+    height:90px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.menuButton{
+    margin-left: 10px;
+}
+.appName{
+    margin-left: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: large;
+    display:flex;
+    align-items: center;
+}
+.header-left{
+    display:flex;
+}
+.header-center{
+    width:300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border:1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.header-search-input-box{
+    width:80%;
+    height:25px;
+    border:none;
+}
+.header-search-input-box:focus{
+    outline:none;
+}
+.header-right{
+    margin-right:20px;
+}
+#header-user-img{
+    width:30px;
+    height:30px;
+    border:1px solid black;
+    border-radius:50%;
+    object-fit:cover;
+}
+aside {
+    position: fixed;
+    width: 20rem;
+    height: 100%;
+    background-color: white;
+    border:1px solid black;
+    z-index: 1000;
+    transform: translateX(-30rem);
+    transition: all 0.5s;
+}
+aside.open {
+    transform: translateX(0);
+}
+.close-sidebar {
+    padding: 0.3rem 0.8rem;
+}
+#sidebar-close-line{
+    display:flex;
+    justify-content: space-between;
+    padding:10px;
+    color: black;
+}
+aside button{
+    background-color: white;
+    border:none;
+}
+
+.Followings{
+    overflow-y: scroll;
+} 
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(179, 179, 179);
+}
